@@ -18,6 +18,8 @@ function enqueue_scripts()
   // サイト内のjs読み込み
   // Swiper カスタム
   wp_enqueue_script('swiper_custom', get_template_directory_uri() . '/assets/js/swiper.js', array(), '1.0.0', false);
+  // header
+  wp_enqueue_script('header_js', get_template_directory_uri() . '/assets/js/header.js', array(), '1.0.0', false);
   // wow
   wp_enqueue_script('wow_js', 'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js', array(), '1.0.0', true);
 }
