@@ -9,5 +9,6 @@
   <?php get_template_part('parts/top/kv'); ?>
   <?php get_template_part('parts/top/detail'); ?>
   <?php get_template_part('parts/top/gallery'); ?>
+  <?php get_template_part('parts/sns'); ?>
 </div>
 <?php get_footer(); ?>

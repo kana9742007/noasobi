@@ -1,0 +1,72 @@
+.price{
+  max-width: 1040px;
+  margin: 80px auto 0px;
+  width: 95%;
+  .section-title{
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 7px;
+  }
+  &-ul{
+    list-style: none;
+    max-width: 900px;
+    margin: 50px auto 0px;
+  }
+  &-list{
+    color: #4c4948;
+    text-align: center;
+    background-color: #dbe0cc;
+    border-bottom: 2px solid #ffffff;
+    &-flex{
+      display: flex;
+      justify-content: space-between;
+    }
+    &-room{
+      padding: 15px 20px;
+      font-weight: bold;
+      font-size: 20px;
+      width: calc(100% / 4);
+    }
+    &-price{
+      width: calc(100% / 4);
+      padding: 15px 20px;
+      font-size: 18px;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  }
+  .campaign_flug{
+    .price-list-price{
+      text-decoration: line-through;
+      width: calc(100% / 4);
+    }
+    .price-list-campaign{
+      width: calc(100% / 4);
+      padding: 15px 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .weight-normal{
+      font-weight: normal;
+      width: calc(100% / 8);
+    }
+  }
+  .price-list-title{
+    color: #4c4948;
+    text-align: center;
+    background-color: #a4b37f;
+    border-bottom: 4px solid #ffffff;
+    font-weight: bold;
+
+    &-flex{
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+    }
+
+    .child{
+      width: calc(100% / 4);
+      padding: 15px 20px;
+    }
+  }
+}

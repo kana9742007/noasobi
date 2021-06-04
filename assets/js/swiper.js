@@ -14,13 +14,19 @@ jQuery(function () {
 jQuery(function () {
 
   var thumbSwiper = new Swiper(".thumbnail-slider", {
-    slidesPerView: 5,
+    slidesPerView: 3,
     freeMode: true,
     spaceBetween: 30,
     slideToClickedSlide: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     simulateTouch: true,
+
+    breakpoints: {
+      640: {
+        slidesPerView: 5,
+      },
+    },
   });
 
   var gallerySwiper = new Swiper(".gallery-container", {

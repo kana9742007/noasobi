@@ -1,0 +1,118 @@
+.cafe-wrapper{
+  margin: 0 auto;
+  padding-top: 70px;
+  max-width: 1040px;
+  width: 95%;
+  .cafe{
+    &-title{
+      font-size: 40px;
+      font-family: $noto;
+      color: #4c4948;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    &-inner{
+
+      .topic-title-h2{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .text{
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .topic-detail{
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .plan-container{
+        margin: 30px auto;
+        width: 80%;
+        padding: 20px 30px;
+        border-top: 2px solid #a4b37f;
+
+        .topic-title{
+          font-size: 25px;
+          text-align: left;
+          margin-bottom: 15px;
+          color: #4c4948;
+          text-align: center;
+          position: relative;
+          padding-bottom: 15px;
+
+          &::after{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: #4c4948;
+            display: block;
+            transform: translateX(-50%);
+            bottom: 0px;
+            left: 50%;
+          }
+        }
+        p{
+          line-height: 1.8;
+        }
+      }
+
+      .add-bottom{
+        border-bottom: 2px solid #a4b37f;
+      }
+
+      .flex-wrapper{
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 0px;
+        margin: 50px auto;
+        @include sp($md){
+          width: 95%;
+        }
+
+        .topic-title{
+          color:#4c4948;
+        }
+
+        .plan-flex{
+          display: flex;
+          justify-content: space-between;
+
+          @include sp($md){
+            display: block;
+          }
+
+          .plan-block{
+            width: calc(100%/3 - 45px);
+            @include sp($md){
+              width: auto;
+              margin: 20px 0px;
+            }
+            background-color: #a4b37f;
+            padding: 20px 15px;
+            border-radius: 30px;
+
+            .plan-title{
+              font-size: 20px;
+              font-weight: bold;
+              margin-bottom: 15px;
+              text-align: center;
+            }
+
+            .plan-detail{
+              color: #ffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

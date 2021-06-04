@@ -1,7 +1,8 @@
 //フォントサイズ基準
 html {
     font-size: 16px;
-    color: $mainBlack;
+    color: #4c4948;
+    font-family: $noto;
 }
 
 #loading {
@@ -34,10 +35,6 @@ html {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    @include sp(){
-        top: 65%;
-    }
-
     #loader_logo{
         animation-name: logoScale;
         animation-duration: 1.3s;
@@ -60,6 +57,10 @@ header{
         padding-top: 15%;
         right: 0px;
         transform: translateX(100%);
+
+        @include sp($md){
+            width: 100%;
+        }
 
         .menu{
             padding: 20px;
@@ -177,4 +178,12 @@ footer{
             padding-bottom: 8px;
         }
     }
+}
+
+.section-title{
+    font-weight: 600;
+    font-size: 40px;
+    color: #4c4948;
+    margin-bottom: 48px;
+    font-family: $noto;
 }

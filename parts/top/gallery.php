@@ -1,6 +1,8 @@
 <section class="gallery">
   <div class="gallery-inner">
-    <h2 class="section-title wow animate__animated animate__slideInRight">フロアガイド</h2>
+    <?php if (is_home()): ?>
+      <h2 class="section-title wow animate__animated animate__slideInRight">フロアガイド</h2>
+    <?php endif; ?>
     <div class="wow animate__animated animate__fadeIn">
       <div class="gallery-container">
         <div class="swiper-wrapper">

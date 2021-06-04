@@ -1,0 +1,27 @@
+.share-house-wrapper{
+  margin: 0 auto;
+  padding-top: 70px;
+  .share-house{
+    &-title{
+      font-size: 40px;
+      font-family: $noto;
+      color: #4c4948;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    &-gallery-detail{
+      font-size: 16px;
+      color: #4c4948;
+      line-height: 1.8;
+    }
+    &-inner{
+      max-width: 1040px;
+      margin: 0px auto 30px;
+      width: 95%;
+      .gallery{
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
